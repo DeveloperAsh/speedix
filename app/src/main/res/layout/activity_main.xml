@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F5F5F5"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="56sp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/tab_bottom"
+                         app:tabIndicatorHeight="2.5sp"
+                        app:tabIndicatorColor="@color/colorPrimaryVariant"
+                        android:layout_height="2.5sp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:tag="0"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/view_home_tab"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/img_home_tab"
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/home_enable" />
+
+                            <com.speedix.user.customview.TextviewSofiaBold
+                                android:id="@+id/txt_home_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Home"
+                                android:textColor="@color/enable_tab_color"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:tag="1"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/view_cart_tab"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:id="@+id/img_cart_tab"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/cart_disable" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Repair"
+                                android:id="@+id/txt_cart_tab"
+                                android:textColor="@color/disable_tab_color"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:tag="2"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/view_help_tab"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:id="@+id/img_help_tab"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/help_disable" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Help"
+                                android:id="@+id/txt_help_tab"
+                                android:textColor="@color/disable_tab_color"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:tag="3"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/view_more_tab"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:id="@+id/img_more_tab"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/profile_disable" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="More"
+                                android:id="@+id/txt_more_tab"
+                                android:textColor="@color/disable_tab_color"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+</layout>
